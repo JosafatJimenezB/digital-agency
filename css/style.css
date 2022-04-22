@@ -283,6 +283,10 @@ ul{
     .container{
         max-width: 786px;
     }
+
+    .md-text-left{
+        text-align: left;
+    }
 }
 
 /* for large screen lg*/
@@ -314,6 +318,11 @@ ul{
     .lg-cols-3{
         grid-template-columns: repeat(3, minmax(0,1fr));
     }
+
+    .lg-cols-2{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
 }
 
 /* for large screen xl */
@@ -401,9 +410,27 @@ ul{
 }
 
 
+/* ----------- digital area ------------ */
 
+#site-main .life-area .grid{
+    column-gap: 10em;
+}
 
+#site-main .life-area .grid-images{
+    display: grid;
+    grid-template-columns: repeat(16, minmax(10px,1fr));
+    grid-template-rows: repeat(8, minmax(100px,1fr));
+}
 
+#site-main .life-area .grid-images .item-one{
+    background: var(--text-gray);
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background: var(--bg-image1) no-repeat;
+    background-size: cover;
+}
 
 
 
